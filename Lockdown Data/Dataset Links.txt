@@ -1,0 +1,13 @@
+Bristol Air Quality Data-
+
+https://opendata.bristol.gov.uk/explore/dataset/air-quality-data-continuous/export/?disjunctive.location&sort=-date_time&q.timerange.date_time=date_time:%5B2014-01-01T00:00:00Z+TO+2022-03-31T22:59:59Z%5D
+
+
+Google Mobility Data-
+
+https://opendata.bristol.gov.uk/explore/dataset/google_mobility_data/information/
+
+
+Traffic Count Data-
+
+https://opendata.bristol.gov.uk/explore/dataset/fact-traffic-counts/information/?disjunctive.countdevicedescription&disjunctive.link
