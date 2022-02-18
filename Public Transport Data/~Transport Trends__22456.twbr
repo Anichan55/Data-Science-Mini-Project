@@ -167,6 +167,7 @@
           </metadata-record>
         </metadata-records>
       </connection>
+      <aliases enabled='yes' />
       <column datatype='real' name='[Bus (excl. London)]' role='measure' type='quantitative' />
       <column datatype='real' name='[Cars]' role='measure' type='quantitative' />
       <column datatype='real' name='[Cycling]' role='measure' type='quantitative' />
@@ -266,13 +267,12 @@
             <column-instance column='[National Rail]' derivation='Sum' name='[sum:National Rail:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Transport for London Bus]' derivation='Sum' name='[sum:Transport for London Bus:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Transport for London Tube]' derivation='Sum' name='[sum:Transport for London Tube:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[Date]' derivation='Day-Trunc' name='[tdy:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
           </datasource-dependencies>
           <aggregation value='true' />
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[publictransport-node-Clean 1-1c9701a1b6764b8c9b0d72cd849fbae4].[tdy:Date:qk]' field-type='quantitative' max='#2024-01-23 03:39:26.641#' min='#2020-01-16 03:24:15.230#' range-type='fixed' scope='cols' type='space' />
             <encoding attr='space' class='0' field='[publictransport-node-Clean 1-1c9701a1b6764b8c9b0d72cd849fbae4].[sum:Transport for London Bus:qk]' field-type='quantitative' max='23.129604632914095' min='-166.63189701982756' range-type='fixed' scope='rows' type='space' />
           </style-rule>
         </style>
@@ -293,8 +293,8 @@
               <style-rule element='pane'>
                 <format attr='minheight' value='157' />
                 <format attr='maxheight' value='157' />
-                <format attr='minwidth' value='862' />
-                <format attr='maxwidth' value='862' />
+                <format attr='minwidth' value='1036' />
+                <format attr='maxwidth' value='1036' />
                 <format attr='aspect' value='0' />
               </style-rule>
             </style>
@@ -421,12 +421,12 @@
           </pane>
         </panes>
         <rows>([publictransport-node-Clean 1-1c9701a1b6764b8c9b0d72cd849fbae4].[sum:Bus (excl. London):qk] + ([publictransport-node-Clean 1-1c9701a1b6764b8c9b0d72cd849fbae4].[sum:Cars:qk] + ([publictransport-node-Clean 1-1c9701a1b6764b8c9b0d72cd849fbae4].[sum:Cycling:qk] + ([publictransport-node-Clean 1-1c9701a1b6764b8c9b0d72cd849fbae4].[sum:Heavy Goods Vehicles:qk] + ([publictransport-node-Clean 1-1c9701a1b6764b8c9b0d72cd849fbae4].[sum:Light Commercial Vehicles:qk] + ([publictransport-node-Clean 1-1c9701a1b6764b8c9b0d72cd849fbae4].[sum:National Rail:qk] + ([publictransport-node-Clean 1-1c9701a1b6764b8c9b0d72cd849fbae4].[sum:Transport for London Bus:qk] + [publictransport-node-Clean 1-1c9701a1b6764b8c9b0d72cd849fbae4].[sum:Transport for London Tube:qk])))))))</rows>
-        <cols>[publictransport-node-Clean 1-1c9701a1b6764b8c9b0d72cd849fbae4].[tdy:Date:qk]</cols>
+        <cols>[publictransport-node-Clean 1-1c9701a1b6764b8c9b0d72cd849fbae4].[yr:Date:ok]</cols>
       </table>
       <simple-id uuid='{D3CA8968-A357-40CC-9E45-CAA78E6995E7}' />
     </worksheet>
   </worksheets>
-  <windows source-height='30'>
+  <windows source-height='44'>
     <window class='worksheet' maximized='true' name='Sheet 1'>
       <cards>
         <edge name='left'>
@@ -443,7 +443,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='30'>
             <card type='title' />
           </strip>
         </edge>
