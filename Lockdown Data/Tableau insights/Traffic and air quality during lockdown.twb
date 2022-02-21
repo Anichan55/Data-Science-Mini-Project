@@ -1,0 +1,885 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0108.1039                               -->
+<workbook original-version='18.1' source-build='2021.4.3 (20214.22.0108.1039)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Air Quality Cleaned+' inline='true' name='federated.1p0i3jq0olrp4l17us78x06sapfe' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Air Quality Cleaned' name='textscan.0hmm9yf084c6gn1btiap8052rkiq'>
+            <connection class='textscan' directory='C:/Users/anich/OneDrive/Documents/GitHub/Data-Science-Mini-Project/Lockdown Data' filename='Air Quality Cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation join='left' type='join'>
+          <clause type='join'>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[Air Quality Cleaned.csv].[Date Time]' />
+                <expression op='[Traffic_Counts.csv].[Date Time]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Air Quality Cleaned.csv].[Location]' />
+                <expression op='[Traffic_Counts.csv].[Link]' />
+              </expression>
+            </expression>
+          </clause>
+          <relation connection='textscan.0hmm9yf084c6gn1btiap8052rkiq' name='Air Quality Cleaned.csv' table='[Air Quality Cleaned#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='datetime' name='Date Time' ordinal='0' />
+              <column datatype='real' name='NOx' ordinal='1' />
+              <column datatype='real' name='NO2' ordinal='2' />
+              <column datatype='real' name='NO' ordinal='3' />
+              <column datatype='integer' name='SiteID' ordinal='4' />
+              <column datatype='real' name='Temperature' ordinal='5' />
+              <column datatype='string' name='Location' ordinal='6' />
+              <column datatype='string' name='geo_point_2d' ordinal='7' />
+              <column datatype='string' name='DateStart' ordinal='8' />
+              <column datatype='boolean' name='Current' ordinal='9' />
+              <column datatype='string' name='Instrument Type' ordinal='10' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0hmm9yf084c6gn1btiap8052rkiq' name='Traffic_Counts.csv' table='[Traffic_Counts#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='datetime' name='Date Time' ordinal='0' />
+              <column datatype='integer' name='Hourly Flow' ordinal='1' />
+              <column datatype='integer' name='Hourly Profile' ordinal='2' />
+              <column datatype='string' name='geo_point_2d' ordinal='3' />
+              <column datatype='string' name='Link' ordinal='4' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation join='left' type='join'>
+          <clause type='join'>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[Air Quality Cleaned.csv].[Date Time]' />
+                <expression op='[Traffic_Counts.csv].[Date Time]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Air Quality Cleaned.csv].[Location]' />
+                <expression op='[Traffic_Counts.csv].[Link]' />
+              </expression>
+            </expression>
+          </clause>
+          <relation connection='textscan.0hmm9yf084c6gn1btiap8052rkiq' name='Air Quality Cleaned.csv' table='[Air Quality Cleaned#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='datetime' name='Date Time' ordinal='0' />
+              <column datatype='real' name='NOx' ordinal='1' />
+              <column datatype='real' name='NO2' ordinal='2' />
+              <column datatype='real' name='NO' ordinal='3' />
+              <column datatype='integer' name='SiteID' ordinal='4' />
+              <column datatype='real' name='Temperature' ordinal='5' />
+              <column datatype='string' name='Location' ordinal='6' />
+              <column datatype='string' name='geo_point_2d' ordinal='7' />
+              <column datatype='string' name='DateStart' ordinal='8' />
+              <column datatype='boolean' name='Current' ordinal='9' />
+              <column datatype='string' name='Instrument Type' ordinal='10' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0hmm9yf084c6gn1btiap8052rkiq' name='Traffic_Counts.csv' table='[Traffic_Counts#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='datetime' name='Date Time' ordinal='0' />
+              <column datatype='integer' name='Hourly Flow' ordinal='1' />
+              <column datatype='integer' name='Hourly Profile' ordinal='2' />
+              <column datatype='string' name='geo_point_2d' ordinal='3' />
+              <column datatype='string' name='Link' ordinal='4' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Current]' value='[Air Quality Cleaned.csv].[Current]' />
+          <map key='[Date Time (Traffic_Counts.csv)]' value='[Traffic_Counts.csv].[Date Time]' />
+          <map key='[Date Time]' value='[Air Quality Cleaned.csv].[Date Time]' />
+          <map key='[DateStart]' value='[Air Quality Cleaned.csv].[DateStart]' />
+          <map key='[Hourly Flow]' value='[Traffic_Counts.csv].[Hourly Flow]' />
+          <map key='[Hourly Profile]' value='[Traffic_Counts.csv].[Hourly Profile]' />
+          <map key='[Instrument Type]' value='[Air Quality Cleaned.csv].[Instrument Type]' />
+          <map key='[Link]' value='[Traffic_Counts.csv].[Link]' />
+          <map key='[Location]' value='[Air Quality Cleaned.csv].[Location]' />
+          <map key='[NO2]' value='[Air Quality Cleaned.csv].[NO2]' />
+          <map key='[NO]' value='[Air Quality Cleaned.csv].[NO]' />
+          <map key='[NOx]' value='[Air Quality Cleaned.csv].[NOx]' />
+          <map key='[SiteID]' value='[Air Quality Cleaned.csv].[SiteID]' />
+          <map key='[Temperature]' value='[Air Quality Cleaned.csv].[Temperature]' />
+          <map key='[geo_point_2d (Traffic_Counts.csv)]' value='[Traffic_Counts.csv].[geo_point_2d]' />
+          <map key='[geo_point_2d]' value='[Air Quality Cleaned.csv].[geo_point_2d]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Air Quality Cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rs&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Traffic_Counts.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rs&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date Time</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Date Time]</local-name>
+            <parent-name>[Air Quality Cleaned.csv]</parent-name>
+            <remote-alias>Date Time</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air Quality Cleaned.csv_46DC991131B44C2480B592379BF43448]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NOx</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NOx]</local-name>
+            <parent-name>[Air Quality Cleaned.csv]</parent-name>
+            <remote-alias>NOx</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air Quality Cleaned.csv_46DC991131B44C2480B592379BF43448]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NO2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NO2]</local-name>
+            <parent-name>[Air Quality Cleaned.csv]</parent-name>
+            <remote-alias>NO2</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air Quality Cleaned.csv_46DC991131B44C2480B592379BF43448]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NO</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NO]</local-name>
+            <parent-name>[Air Quality Cleaned.csv]</parent-name>
+            <remote-alias>NO</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air Quality Cleaned.csv_46DC991131B44C2480B592379BF43448]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SiteID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SiteID]</local-name>
+            <parent-name>[Air Quality Cleaned.csv]</parent-name>
+            <remote-alias>SiteID</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air Quality Cleaned.csv_46DC991131B44C2480B592379BF43448]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Temperature</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Temperature]</local-name>
+            <parent-name>[Air Quality Cleaned.csv]</parent-name>
+            <remote-alias>Temperature</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air Quality Cleaned.csv_46DC991131B44C2480B592379BF43448]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[Air Quality Cleaned.csv]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air Quality Cleaned.csv_46DC991131B44C2480B592379BF43448]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geo_point_2d</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[geo_point_2d]</local-name>
+            <parent-name>[Air Quality Cleaned.csv]</parent-name>
+            <remote-alias>geo_point_2d</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air Quality Cleaned.csv_46DC991131B44C2480B592379BF43448]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DateStart</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DateStart]</local-name>
+            <parent-name>[Air Quality Cleaned.csv]</parent-name>
+            <remote-alias>DateStart</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air Quality Cleaned.csv_46DC991131B44C2480B592379BF43448]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Current</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Current]</local-name>
+            <parent-name>[Air Quality Cleaned.csv]</parent-name>
+            <remote-alias>Current</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air Quality Cleaned.csv_46DC991131B44C2480B592379BF43448]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Instrument Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Instrument Type]</local-name>
+            <parent-name>[Air Quality Cleaned.csv]</parent-name>
+            <remote-alias>Instrument Type</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air Quality Cleaned.csv_46DC991131B44C2480B592379BF43448]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date Time</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Date Time (Traffic_Counts.csv)]</local-name>
+            <parent-name>[Traffic_Counts.csv]</parent-name>
+            <remote-alias>Date Time</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air Quality Cleaned.csv_46DC991131B44C2480B592379BF43448]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hourly Flow</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hourly Flow]</local-name>
+            <parent-name>[Traffic_Counts.csv]</parent-name>
+            <remote-alias>Hourly Flow</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air Quality Cleaned.csv_46DC991131B44C2480B592379BF43448]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hourly Profile</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hourly Profile]</local-name>
+            <parent-name>[Traffic_Counts.csv]</parent-name>
+            <remote-alias>Hourly Profile</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air Quality Cleaned.csv_46DC991131B44C2480B592379BF43448]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geo_point_2d</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[geo_point_2d (Traffic_Counts.csv)]</local-name>
+            <parent-name>[Traffic_Counts.csv]</parent-name>
+            <remote-alias>geo_point_2d</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air Quality Cleaned.csv_46DC991131B44C2480B592379BF43448]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Link</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Link]</local-name>
+            <parent-name>[Traffic_Counts.csv]</parent-name>
+            <remote-alias>Link</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air Quality Cleaned.csv_46DC991131B44C2480B592379BF43448]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Date Time (Traffic Counts.csv)' datatype='datetime' name='[Date Time (Traffic_Counts.csv)]' role='dimension' type='ordinal' />
+      <column caption='Date Start' datatype='string' name='[DateStart]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Hourly Flow]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Location]' role='dimension' type='nominal' />
+      <column datatype='real' name='[NO2]' role='measure' type='quantitative' />
+      <column datatype='real' name='[NO]' role='measure' type='quantitative' />
+      <column caption='N Ox' datatype='real' name='[NOx]' role='measure' type='quantitative' />
+      <column caption='Site ID' datatype='integer' name='[SiteID]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Air Quality Cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[Air Quality Cleaned.csv_46DC991131B44C2480B592379BF43448]' role='measure' type='quantitative' />
+      <column caption='geo point 2d (Traffic Counts.csv)' datatype='string' name='[geo_point_2d (Traffic_Counts.csv)]' role='dimension' type='nominal' />
+      <column caption='Geo Point 2D' datatype='string' name='[geo_point_2d]' role='dimension' type='nominal' />
+      <column-instance column='[Location]' derivation='None' name='[none:Location:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Hourly Flow]' derivation='Sum' name='[sum:Hourly Flow:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NO2]' derivation='Sum' name='[sum:NO2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NO]' derivation='Sum' name='[sum:NO:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NOx]' derivation='Sum' name='[sum:NOx:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Location:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;AURN St Pauls&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Parson Street School&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Fishponds Road&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Wells Road&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Colston Avenue&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Temple Way&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Brislington Depot&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Location:nk]&#10;[:Measure Names]' type='palette'>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;Fishponds Road&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;Wells Road&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;Colston Avenue&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;Temple Way&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;Parson Street School&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;Brislington Depot&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;AURN St Pauls&quot;</bucket>
+            </map-pri>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1p0i3jq0olrp4l17us78x06sapfe].[sum:NO2:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1p0i3jq0olrp4l17us78x06sapfe].[sum:Hourly Flow:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1p0i3jq0olrp4l17us78x06sapfe].[sum:NOx:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1p0i3jq0olrp4l17us78x06sapfe].[sum:NO:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Air Quality Cleaned.csv' id='Air Quality Cleaned.csv_46DC991131B44C2480B592379BF43448'>
+            <properties context=''>
+              <relation join='left' type='join'>
+                <clause type='join'>
+                  <expression op='AND'>
+                    <expression op='='>
+                      <expression op='[Air Quality Cleaned.csv].[Date Time]' />
+                      <expression op='[Traffic_Counts.csv].[Date Time]' />
+                    </expression>
+                    <expression op='='>
+                      <expression op='[Air Quality Cleaned.csv].[Location]' />
+                      <expression op='[Traffic_Counts.csv].[Link]' />
+                    </expression>
+                  </expression>
+                </clause>
+                <relation connection='textscan.0hmm9yf084c6gn1btiap8052rkiq' name='Air Quality Cleaned.csv' table='[Air Quality Cleaned#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='datetime' name='Date Time' ordinal='0' />
+                    <column datatype='real' name='NOx' ordinal='1' />
+                    <column datatype='real' name='NO2' ordinal='2' />
+                    <column datatype='real' name='NO' ordinal='3' />
+                    <column datatype='integer' name='SiteID' ordinal='4' />
+                    <column datatype='real' name='Temperature' ordinal='5' />
+                    <column datatype='string' name='Location' ordinal='6' />
+                    <column datatype='string' name='geo_point_2d' ordinal='7' />
+                    <column datatype='string' name='DateStart' ordinal='8' />
+                    <column datatype='boolean' name='Current' ordinal='9' />
+                    <column datatype='string' name='Instrument Type' ordinal='10' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.0hmm9yf084c6gn1btiap8052rkiq' name='Traffic_Counts.csv' table='[Traffic_Counts#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='datetime' name='Date Time' ordinal='0' />
+                    <column datatype='integer' name='Hourly Flow' ordinal='1' />
+                    <column datatype='integer' name='Hourly Profile' ordinal='2' />
+                    <column datatype='string' name='geo_point_2d' ordinal='3' />
+                    <column datatype='string' name='Link' ordinal='4' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Air Quality Cleaned+' name='federated.1p0i3jq0olrp4l17us78x06sapfe' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1p0i3jq0olrp4l17us78x06sapfe'>
+            <column datatype='datetime' name='[Date Time]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Hourly Flow]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Location]' role='dimension' type='nominal' />
+            <column datatype='real' name='[NO2]' role='measure' type='quantitative' />
+            <column datatype='real' name='[NO]' role='measure' type='quantitative' />
+            <column caption='N Ox' datatype='real' name='[NOx]' role='measure' type='quantitative' />
+            <column-instance column='[Location]' derivation='None' name='[none:Location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date Time]' derivation='Quarter' name='[qr:Date Time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Hourly Flow]' derivation='Sum' name='[sum:Hourly Flow:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NO2]' derivation='Sum' name='[sum:NO2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NO]' derivation='Sum' name='[sum:NO:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NOx]' derivation='Sum' name='[sum:NOx:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date Time]' derivation='Year' name='[yr:Date Time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1p0i3jq0olrp4l17us78x06sapfe].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1p0i3jq0olrp4l17us78x06sapfe].[sum:NOx:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1p0i3jq0olrp4l17us78x06sapfe].[sum:NO:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1p0i3jq0olrp4l17us78x06sapfe].[sum:NO2:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1p0i3jq0olrp4l17us78x06sapfe].[none:Location:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Location:nk]' member='&quot;Fishponds Road&quot;' />
+              <groupfilter function='member' level='[none:Location:nk]' member='&quot;Parson Street School&quot;' />
+              <groupfilter function='member' level='[none:Location:nk]' member='&quot;Wells Road&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1p0i3jq0olrp4l17us78x06sapfe].[none:Location:nk]</column>
+            <column>[federated.1p0i3jq0olrp4l17us78x06sapfe].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1p0i3jq0olrp4l17us78x06sapfe].[Multiple Values]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1p0i3jq0olrp4l17us78x06sapfe].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.84558010101318359' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1p0i3jq0olrp4l17us78x06sapfe].[sum:Hourly Flow:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1p0i3jq0olrp4l17us78x06sapfe].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.42779004573822021' />
+                <format attr='mark-transparency' value='170' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1p0i3jq0olrp4l17us78x06sapfe].[Multiple Values]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1p0i3jq0olrp4l17us78x06sapfe].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='3.3480663299560547' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1p0i3jq0olrp4l17us78x06sapfe].[none:Location:nk] * ([federated.1p0i3jq0olrp4l17us78x06sapfe].[sum:Hourly Flow:qk] + [federated.1p0i3jq0olrp4l17us78x06sapfe].[Multiple Values]))</rows>
+        <cols>([federated.1p0i3jq0olrp4l17us78x06sapfe].[yr:Date Time:ok] / [federated.1p0i3jq0olrp4l17us78x06sapfe].[qr:Date Time:ok])</cols>
+      </table>
+      <simple-id uuid='{C30B0D55-EFBF-48C7-ABEB-18D61184A860}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.1p0i3jq0olrp4l17us78x06sapfe].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1p0i3jq0olrp4l17us78x06sapfe].[:Measure Names]</field>
+            <field>[federated.1p0i3jq0olrp4l17us78x06sapfe].[none:Location:nk]</field>
+            <field>[federated.1p0i3jq0olrp4l17us78x06sapfe].[yr:Date Time:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A976EE1F-DFD7-44B2-BC3F-3AF208A55E2E}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      3Zvzpm0AAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
