@@ -835,7 +835,7 @@
             </dictionary>
           </manual-sort>
           <filter class='categorical' column='[federated.07vs13s0k4th221bc7j6n0pp0lc8].[none:Year:nk]'>
-            <groupfilter function='member' level='[none:Year:nk]' member='&quot;1990&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[none:Year:nk]' member='&quot;2019&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.07vs13s0k4th221bc7j6n0pp0lc8].[:Measure Names]</column>
@@ -990,7 +990,7 @@
     </worksheet>
   </worksheets>
   <windows source-height='30'>
-    <window class='worksheet' maximized='true' name='Sheet 1'>
+    <window class='worksheet' name='Sheet 1'>
       <cards>
         <edge name='left'>
           <strip size='100'>
@@ -1022,7 +1022,7 @@
       </viewpoint>
       <simple-id uuid='{5E678372-46FE-4F00-92D9-70CE026A444E}' />
     </window>
-    <window class='worksheet' name='Sheet 2'>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
       <cards>
         <edge name='left'>
           <strip size='160'>
