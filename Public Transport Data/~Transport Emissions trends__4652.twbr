@@ -1,0 +1,1058 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0108.1039                               -->
+<workbook original-version='18.1' source-build='2021.4.3 (20214.22.0108.1039)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Sheet1 (envfigurescleaned)' inline='true' name='federated.07vs13s0k4th221bc7j6n0pp0lc8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='envfigurescleaned' name='excel-direct.05ldehe1gfq0qk0zw606e1yjj6n1'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/lydst/OneDrive - University of Bristol/TB2/Data Science Mini Project/envfigurescleaned.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.05ldehe1gfq0qk0zw606e1yjj6n1' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:AA31:no:A1:AA31:0' header='yes' outcome='6'>
+            <column datatype='string' date-parse-format='yyyy' name='Year' ordinal='0' />
+            <column datatype='real' name='CO Cars and taxis (Thousand tonnes)' ordinal='1' />
+            <column datatype='real' name='CO LGVs (vans) (Thousand tonnes)' ordinal='2' />
+            <column datatype='real' name='CO HGVs (Thousand tonnes)' ordinal='3' />
+            <column datatype='real' name='CO Buses and coaches (Thousand tonnes)' ordinal='4' />
+            <column datatype='real' name='CO Motorcycles &amp; mopeds (Thousand tonnes)' ordinal='5' />
+            <column datatype='real' name='CO Rail (Thousand tonnes)' ordinal='6' />
+            <column datatype='real' name='CO Aviation LTO (Thousand tonnes)' ordinal='7' />
+            <column datatype='real' name='CO Domestic shipping (Thousand tonnes)' ordinal='8' />
+            <column datatype='real' name='CO Other (Thousand tonnes)' ordinal='9' />
+            <column datatype='real' name='CO Military Aircraft (Thousand tonnes)' ordinal='10' />
+            <column datatype='real' name='CO Military Shipping (Thousand tonnes)' ordinal='11' />
+            <column datatype='real' name='CO Transport total (Thousand tonnes)' ordinal='12' />
+            <column datatype='real' name='CO National total reported to the UNECE' ordinal='13' />
+            <column datatype='real' name='NOx Cars and taxis (Thousand tonnes)' ordinal='14' />
+            <column datatype='real' name='NOx LGVs (vans) (Thousand tonnes)' ordinal='15' />
+            <column datatype='real' name='NOx HGVs (Thousand tonnes)' ordinal='16' />
+            <column datatype='real' name='NOx Buses and coaches (Thousand tonnes)' ordinal='17' />
+            <column datatype='real' name='NOx Motorcycles &amp; mopeds (Thousand tonnes)' ordinal='18' />
+            <column datatype='real' name='NOx Rail (Thousand tonnes)' ordinal='19' />
+            <column datatype='real' name='NOx Aviation LTO (Thousand tonnes)' ordinal='20' />
+            <column datatype='real' name='NOx Domestic shipping (Thousand tonnes)' ordinal='21' />
+            <column datatype='real' name='NOx Other (Thousand tonnes)' ordinal='22' />
+            <column datatype='real' name='NOx Military Aircraft (Thousand tonnes)' ordinal='23' />
+            <column datatype='real' name='NOx Military Shipping (Thousand tonnes)' ordinal='24' />
+            <column datatype='real' name='NOx Transport total (Thousand tonnes)' ordinal='25' />
+            <column datatype='real' name='NOx National total reported to the UNECE' ordinal='26' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.05ldehe1gfq0qk0zw606e1yjj6n1' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:AA31:no:A1:AA31:0' header='yes' outcome='6'>
+            <column datatype='string' date-parse-format='yyyy' name='Year' ordinal='0' />
+            <column datatype='real' name='CO Cars and taxis (Thousand tonnes)' ordinal='1' />
+            <column datatype='real' name='CO LGVs (vans) (Thousand tonnes)' ordinal='2' />
+            <column datatype='real' name='CO HGVs (Thousand tonnes)' ordinal='3' />
+            <column datatype='real' name='CO Buses and coaches (Thousand tonnes)' ordinal='4' />
+            <column datatype='real' name='CO Motorcycles &amp; mopeds (Thousand tonnes)' ordinal='5' />
+            <column datatype='real' name='CO Rail (Thousand tonnes)' ordinal='6' />
+            <column datatype='real' name='CO Aviation LTO (Thousand tonnes)' ordinal='7' />
+            <column datatype='real' name='CO Domestic shipping (Thousand tonnes)' ordinal='8' />
+            <column datatype='real' name='CO Other (Thousand tonnes)' ordinal='9' />
+            <column datatype='real' name='CO Military Aircraft (Thousand tonnes)' ordinal='10' />
+            <column datatype='real' name='CO Military Shipping (Thousand tonnes)' ordinal='11' />
+            <column datatype='real' name='CO Transport total (Thousand tonnes)' ordinal='12' />
+            <column datatype='real' name='CO National total reported to the UNECE' ordinal='13' />
+            <column datatype='real' name='NOx Cars and taxis (Thousand tonnes)' ordinal='14' />
+            <column datatype='real' name='NOx LGVs (vans) (Thousand tonnes)' ordinal='15' />
+            <column datatype='real' name='NOx HGVs (Thousand tonnes)' ordinal='16' />
+            <column datatype='real' name='NOx Buses and coaches (Thousand tonnes)' ordinal='17' />
+            <column datatype='real' name='NOx Motorcycles &amp; mopeds (Thousand tonnes)' ordinal='18' />
+            <column datatype='real' name='NOx Rail (Thousand tonnes)' ordinal='19' />
+            <column datatype='real' name='NOx Aviation LTO (Thousand tonnes)' ordinal='20' />
+            <column datatype='real' name='NOx Domestic shipping (Thousand tonnes)' ordinal='21' />
+            <column datatype='real' name='NOx Other (Thousand tonnes)' ordinal='22' />
+            <column datatype='real' name='NOx Military Aircraft (Thousand tonnes)' ordinal='23' />
+            <column datatype='real' name='NOx Military Shipping (Thousand tonnes)' ordinal='24' />
+            <column datatype='real' name='NOx Transport total (Thousand tonnes)' ordinal='25' />
+            <column datatype='real' name='NOx National total reported to the UNECE' ordinal='26' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO Cars and taxis (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO Cars and taxis (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CO Cars and taxis (Thousand tonnes)</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO LGVs (vans) (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO LGVs (vans) (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CO LGVs (vans) (Thousand tonnes)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO HGVs (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO HGVs (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CO HGVs (Thousand tonnes)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO Buses and coaches (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO Buses and coaches (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CO Buses and coaches (Thousand tonnes)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO Motorcycles &amp; mopeds (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO Motorcycles &amp; mopeds (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CO Motorcycles &amp; mopeds (Thousand tonnes)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO Rail (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO Rail (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CO Rail (Thousand tonnes)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO Aviation LTO (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO Aviation LTO (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CO Aviation LTO (Thousand tonnes)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO Domestic shipping (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO Domestic shipping (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CO Domestic shipping (Thousand tonnes)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO Other (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO Other (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CO Other (Thousand tonnes)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO Military Aircraft (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO Military Aircraft (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CO Military Aircraft (Thousand tonnes)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO Military Shipping (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO Military Shipping (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CO Military Shipping (Thousand tonnes)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO Transport total (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO Transport total (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CO Transport total (Thousand tonnes)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO National total reported to the UNECE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO National total reported to the UNECE]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CO National total reported to the UNECE</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NOx Cars and taxis (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NOx Cars and taxis (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>NOx Cars and taxis (Thousand tonnes)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NOx LGVs (vans) (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NOx LGVs (vans) (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>NOx LGVs (vans) (Thousand tonnes)</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NOx HGVs (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NOx HGVs (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>NOx HGVs (Thousand tonnes)</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NOx Buses and coaches (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NOx Buses and coaches (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>NOx Buses and coaches (Thousand tonnes)</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NOx Motorcycles &amp; mopeds (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NOx Motorcycles &amp; mopeds (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>NOx Motorcycles &amp; mopeds (Thousand tonnes)</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NOx Rail (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NOx Rail (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>NOx Rail (Thousand tonnes)</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NOx Aviation LTO (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NOx Aviation LTO (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>NOx Aviation LTO (Thousand tonnes)</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NOx Domestic shipping (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NOx Domestic shipping (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>NOx Domestic shipping (Thousand tonnes)</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NOx Other (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NOx Other (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>NOx Other (Thousand tonnes)</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NOx Military Aircraft (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NOx Military Aircraft (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>NOx Military Aircraft (Thousand tonnes)</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NOx Military Shipping (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NOx Military Shipping (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>NOx Military Shipping (Thousand tonnes)</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NOx Transport total (Thousand tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NOx Transport total (Thousand tonnes)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>NOx Transport total (Thousand tonnes)</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NOx National total reported to the UNECE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NOx National total reported to the UNECE]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>NOx National total reported to the UNECE</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AA31:no:A1:AA31:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Aviation LTO (Thousand tonnes):qk]&quot;' value='Aviation LTO (CO)' />
+          <alias key='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Buses and coaches (Thousand tonnes):qk]&quot;' value='Buses and coaches (CO)' />
+          <alias key='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Cars and taxis (Thousand tonnes):qk]&quot;' value='Cars and taxis (CO)' />
+          <alias key='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Domestic shipping (Thousand tonnes):qk]&quot;' value='Domestic shipping (CO)' />
+          <alias key='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO HGVs (Thousand tonnes):qk]&quot;' value='HGVs (CO)' />
+          <alias key='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO LGVs (vans) (Thousand tonnes):qk]&quot;' value='LGVs (CO)' />
+          <alias key='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Military Aircraft (Thousand tonnes):qk]&quot;' value='Military - Aircraft (CO)' />
+          <alias key='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Military Shipping (Thousand tonnes):qk]&quot;' value='Military - Shipping (CO)' />
+          <alias key='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Motorcycles &amp; mopeds (Thousand tonnes):qk]&quot;' value='Motorcycles &amp; mopeds (CO)' />
+          <alias key='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Other (Thousand tonnes):qk]&quot;' value='Other (CO)' />
+          <alias key='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Rail (Thousand tonnes):qk]&quot;' value='Rail (CO)' />
+          <alias key='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Aviation LTO (Thousand tonnes):qk]&quot;' value='Aviation LTO' />
+          <alias key='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Buses and coaches (Thousand tonnes):qk]&quot;' value='Buses and coaches' />
+          <alias key='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Cars and taxis (Thousand tonnes):qk]&quot;' value='Cars and taxis' />
+          <alias key='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Domestic shipping (Thousand tonnes):qk]&quot;' value='Domestic shipping' />
+          <alias key='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx HGVs (Thousand tonnes):qk]&quot;' value='HGVs' />
+          <alias key='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx LGVs (vans) (Thousand tonnes):qk]&quot;' value='LGVs' />
+          <alias key='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Military Aircraft (Thousand tonnes):qk]&quot;' value='Military - Aircraft' />
+          <alias key='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Military Shipping (Thousand tonnes):qk]&quot;' value='Military - Shipping' />
+          <alias key='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Motorcycles &amp; mopeds (Thousand tonnes):qk]&quot;' value='Motorcycles &amp; mopeds' />
+          <alias key='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Other (Thousand tonnes):qk]&quot;' value='Other' />
+          <alias key='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Rail (Thousand tonnes):qk]&quot;' value='Rail' />
+        </aliases>
+      </column>
+      <column datatype='real' name='[CO Aviation LTO (Thousand tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[CO Buses and coaches (Thousand tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[CO Cars and taxis (Thousand tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[CO Domestic shipping (Thousand tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[CO HGVs (Thousand tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[CO LGVs (vans) (Thousand tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[CO Military Aircraft (Thousand tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[CO Military Shipping (Thousand tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[CO Motorcycles &amp; mopeds (Thousand tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[CO Other (Thousand tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[CO Rail (Thousand tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[NOx Aviation LTO (Thousand tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[NOx Buses and coaches (Thousand tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[NOx Cars and taxis (Thousand tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[NOx Domestic shipping (Thousand tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[NOx HGVs (Thousand tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[NOx LGVs (vans) (Thousand tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[NOx Military Aircraft (Thousand tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[NOx Military Shipping (Thousand tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[NOx Motorcycles &amp; mopeds (Thousand tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[NOx Other (Thousand tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[NOx Rail (Thousand tonnes)]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Year]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_AECDB691AD684A008C021BF2959DE720]' role='measure' type='quantitative' />
+      <column-instance column='[Year]' derivation='None' name='[none:Year:nk]' pivot='key' type='nominal' />
+      <column-instance column='[CO Aviation LTO (Thousand tonnes)]' derivation='Sum' name='[sum:CO Aviation LTO (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CO Buses and coaches (Thousand tonnes)]' derivation='Sum' name='[sum:CO Buses and coaches (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CO Cars and taxis (Thousand tonnes)]' derivation='Sum' name='[sum:CO Cars and taxis (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CO Domestic shipping (Thousand tonnes)]' derivation='Sum' name='[sum:CO Domestic shipping (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CO HGVs (Thousand tonnes)]' derivation='Sum' name='[sum:CO HGVs (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CO LGVs (vans) (Thousand tonnes)]' derivation='Sum' name='[sum:CO LGVs (vans) (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CO Military Aircraft (Thousand tonnes)]' derivation='Sum' name='[sum:CO Military Aircraft (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CO Military Shipping (Thousand tonnes)]' derivation='Sum' name='[sum:CO Military Shipping (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CO Motorcycles &amp; mopeds (Thousand tonnes)]' derivation='Sum' name='[sum:CO Motorcycles &amp; mopeds (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CO Other (Thousand tonnes)]' derivation='Sum' name='[sum:CO Other (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CO Rail (Thousand tonnes)]' derivation='Sum' name='[sum:CO Rail (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NOx Aviation LTO (Thousand tonnes)]' derivation='Sum' name='[sum:NOx Aviation LTO (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NOx Buses and coaches (Thousand tonnes)]' derivation='Sum' name='[sum:NOx Buses and coaches (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NOx Cars and taxis (Thousand tonnes)]' derivation='Sum' name='[sum:NOx Cars and taxis (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NOx Domestic shipping (Thousand tonnes)]' derivation='Sum' name='[sum:NOx Domestic shipping (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NOx HGVs (Thousand tonnes)]' derivation='Sum' name='[sum:NOx HGVs (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NOx LGVs (vans) (Thousand tonnes)]' derivation='Sum' name='[sum:NOx LGVs (vans) (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NOx Military Aircraft (Thousand tonnes)]' derivation='Sum' name='[sum:NOx Military Aircraft (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NOx Military Shipping (Thousand tonnes)]' derivation='Sum' name='[sum:NOx Military Shipping (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NOx Motorcycles &amp; mopeds (Thousand tonnes)]' derivation='Sum' name='[sum:NOx Motorcycles &amp; mopeds (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NOx Other (Thousand tonnes)]' derivation='Sum' name='[sum:NOx Other (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NOx Rail (Thousand tonnes)]' derivation='Sum' name='[sum:NOx Rail (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='1' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Aviation LTO (Thousand tonnes):qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO HGVs (Thousand tonnes):qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Domestic shipping (Thousand tonnes):qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Motorcycles &amp; mopeds (Thousand tonnes):qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Military Aircraft (Thousand tonnes):qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Other (Thousand tonnes):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Cars and taxis (Thousand tonnes):qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO LGVs (vans) (Thousand tonnes):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Buses and coaches (Thousand tonnes):qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Rail (Thousand tonnes):qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Military Shipping (Thousand tonnes):qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Year:nk]' palette='green_orange_cyan_yellow_10_0' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;1998&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2018&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;1990&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2010&quot;</bucket>
+            </map>
+            <map to='#4e9f50'>
+              <bucket>&quot;1993&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;1994&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2014&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2002&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;1999&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2019&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;1995&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2015&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2008&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;1991&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2011&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2006&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;1996&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2016&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2003&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2004&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2007&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2009&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2000&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;1997&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2017&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;1992&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2012&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2005&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2001&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2013&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_AECDB691AD684A008C021BF2959DE720'>
+            <properties context=''>
+              <relation connection='excel-direct.05ldehe1gfq0qk0zw606e1yjj6n1' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:AA31:no:A1:AA31:0' header='yes' outcome='6'>
+                  <column datatype='string' date-parse-format='yyyy' name='Year' ordinal='0' />
+                  <column datatype='real' name='CO Cars and taxis (Thousand tonnes)' ordinal='1' />
+                  <column datatype='real' name='CO LGVs (vans) (Thousand tonnes)' ordinal='2' />
+                  <column datatype='real' name='CO HGVs (Thousand tonnes)' ordinal='3' />
+                  <column datatype='real' name='CO Buses and coaches (Thousand tonnes)' ordinal='4' />
+                  <column datatype='real' name='CO Motorcycles &amp; mopeds (Thousand tonnes)' ordinal='5' />
+                  <column datatype='real' name='CO Rail (Thousand tonnes)' ordinal='6' />
+                  <column datatype='real' name='CO Aviation LTO (Thousand tonnes)' ordinal='7' />
+                  <column datatype='real' name='CO Domestic shipping (Thousand tonnes)' ordinal='8' />
+                  <column datatype='real' name='CO Other (Thousand tonnes)' ordinal='9' />
+                  <column datatype='real' name='CO Military Aircraft (Thousand tonnes)' ordinal='10' />
+                  <column datatype='real' name='CO Military Shipping (Thousand tonnes)' ordinal='11' />
+                  <column datatype='real' name='CO Transport total (Thousand tonnes)' ordinal='12' />
+                  <column datatype='real' name='CO National total reported to the UNECE' ordinal='13' />
+                  <column datatype='real' name='NOx Cars and taxis (Thousand tonnes)' ordinal='14' />
+                  <column datatype='real' name='NOx LGVs (vans) (Thousand tonnes)' ordinal='15' />
+                  <column datatype='real' name='NOx HGVs (Thousand tonnes)' ordinal='16' />
+                  <column datatype='real' name='NOx Buses and coaches (Thousand tonnes)' ordinal='17' />
+                  <column datatype='real' name='NOx Motorcycles &amp; mopeds (Thousand tonnes)' ordinal='18' />
+                  <column datatype='real' name='NOx Rail (Thousand tonnes)' ordinal='19' />
+                  <column datatype='real' name='NOx Aviation LTO (Thousand tonnes)' ordinal='20' />
+                  <column datatype='real' name='NOx Domestic shipping (Thousand tonnes)' ordinal='21' />
+                  <column datatype='real' name='NOx Other (Thousand tonnes)' ordinal='22' />
+                  <column datatype='real' name='NOx Military Aircraft (Thousand tonnes)' ordinal='23' />
+                  <column datatype='real' name='NOx Military Shipping (Thousand tonnes)' ordinal='24' />
+                  <column datatype='real' name='NOx Transport total (Thousand tonnes)' ordinal='25' />
+                  <column datatype='real' name='NOx National total reported to the UNECE' ordinal='26' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>Carbon Monoxide (CO) Transport Emissions in the UK by Transport Mode</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (envfigurescleaned)' name='federated.07vs13s0k4th221bc7j6n0pp0lc8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07vs13s0k4th221bc7j6n0pp0lc8'>
+            <column datatype='real' name='[CO Aviation LTO (Thousand tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[CO Buses and coaches (Thousand tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[CO Cars and taxis (Thousand tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[CO Domestic shipping (Thousand tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[CO HGVs (Thousand tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[CO LGVs (vans) (Thousand tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[CO Military Aircraft (Thousand tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[CO Military Shipping (Thousand tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[CO Motorcycles &amp; mopeds (Thousand tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[CO Other (Thousand tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[CO Rail (Thousand tonnes)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Year]' role='dimension' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CO Aviation LTO (Thousand tonnes)]' derivation='Sum' name='[sum:CO Aviation LTO (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CO Buses and coaches (Thousand tonnes)]' derivation='Sum' name='[sum:CO Buses and coaches (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CO Cars and taxis (Thousand tonnes)]' derivation='Sum' name='[sum:CO Cars and taxis (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CO Domestic shipping (Thousand tonnes)]' derivation='Sum' name='[sum:CO Domestic shipping (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CO HGVs (Thousand tonnes)]' derivation='Sum' name='[sum:CO HGVs (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CO LGVs (vans) (Thousand tonnes)]' derivation='Sum' name='[sum:CO LGVs (vans) (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CO Military Aircraft (Thousand tonnes)]' derivation='Sum' name='[sum:CO Military Aircraft (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CO Military Shipping (Thousand tonnes)]' derivation='Sum' name='[sum:CO Military Shipping (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CO Motorcycles &amp; mopeds (Thousand tonnes)]' derivation='Sum' name='[sum:CO Motorcycles &amp; mopeds (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CO Other (Thousand tonnes)]' derivation='Sum' name='[sum:CO Other (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CO Rail (Thousand tonnes)]' derivation='Sum' name='[sum:CO Rail (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07vs13s0k4th221bc7j6n0pp0lc8].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Aviation LTO (Thousand tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Buses and coaches (Thousand tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Cars and taxis (Thousand tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Domestic shipping (Thousand tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO HGVs (Thousand tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO LGVs (vans) (Thousand tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Military Aircraft (Thousand tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Military Shipping (Thousand tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Motorcycles &amp; mopeds (Thousand tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Other (Thousand tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Rail (Thousand tonnes):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.07vs13s0k4th221bc7j6n0pp0lc8].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Aviation LTO (Thousand tonnes):qk]&quot;</bucket>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Buses and coaches (Thousand tonnes):qk]&quot;</bucket>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Cars and taxis (Thousand tonnes):qk]&quot;</bucket>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Domestic shipping (Thousand tonnes):qk]&quot;</bucket>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO HGVs (Thousand tonnes):qk]&quot;</bucket>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO LGVs (vans) (Thousand tonnes):qk]&quot;</bucket>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Military Aircraft (Thousand tonnes):qk]&quot;</bucket>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Military Shipping (Thousand tonnes):qk]&quot;</bucket>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Motorcycles &amp; mopeds (Thousand tonnes):qk]&quot;</bucket>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Other (Thousand tonnes):qk]&quot;</bucket>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:CO Rail (Thousand tonnes):qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.07vs13s0k4th221bc7j6n0pp0lc8].[none:Year:nk]'>
+            <groupfilter function='member' level='[none:Year:nk]' member='&quot;1990&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.07vs13s0k4th221bc7j6n0pp0lc8].[:Measure Names]</column>
+            <column>[federated.07vs13s0k4th221bc7j6n0pp0lc8].[none:Year:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.07vs13s0k4th221bc7j6n0pp0lc8].[Multiple Values]' scope='rows' value='Emissions (thousand tonnes)' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-size' field='[federated.07vs13s0k4th221bc7j6n0pp0lc8].[Multiple Values]' value='9' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.07vs13s0k4th221bc7j6n0pp0lc8].[none:Year:nk]' value='Year' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='text-align' value='left' />
+            <format attr='font-size' value='9' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.07vs13s0k4th221bc7j6n0pp0lc8].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#86bcb6' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07vs13s0k4th221bc7j6n0pp0lc8].[Multiple Values]</rows>
+        <cols>[federated.07vs13s0k4th221bc7j6n0pp0lc8].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{8CC64C4D-32F9-459F-B13A-B383DB9A9BC6}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000'>Nitrogen Oxides (NO</run>
+            <run fontcolor='#000000' fontname='arial,sans-serif' fontsize='11'>ₓ</run>
+            <run fontcolor='#000000'>) Transport Emissions in the UK by Transport Mode</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (envfigurescleaned)' name='federated.07vs13s0k4th221bc7j6n0pp0lc8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07vs13s0k4th221bc7j6n0pp0lc8'>
+            <column datatype='real' name='[NOx Aviation LTO (Thousand tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[NOx Buses and coaches (Thousand tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[NOx Cars and taxis (Thousand tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[NOx Domestic shipping (Thousand tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[NOx HGVs (Thousand tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[NOx LGVs (vans) (Thousand tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[NOx Military Aircraft (Thousand tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[NOx Military Shipping (Thousand tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[NOx Motorcycles &amp; mopeds (Thousand tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[NOx Other (Thousand tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[NOx Rail (Thousand tonnes)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Year]' role='dimension' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[NOx Aviation LTO (Thousand tonnes)]' derivation='Sum' name='[sum:NOx Aviation LTO (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NOx Buses and coaches (Thousand tonnes)]' derivation='Sum' name='[sum:NOx Buses and coaches (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NOx Cars and taxis (Thousand tonnes)]' derivation='Sum' name='[sum:NOx Cars and taxis (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NOx Domestic shipping (Thousand tonnes)]' derivation='Sum' name='[sum:NOx Domestic shipping (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NOx HGVs (Thousand tonnes)]' derivation='Sum' name='[sum:NOx HGVs (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NOx LGVs (vans) (Thousand tonnes)]' derivation='Sum' name='[sum:NOx LGVs (vans) (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NOx Military Aircraft (Thousand tonnes)]' derivation='Sum' name='[sum:NOx Military Aircraft (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NOx Military Shipping (Thousand tonnes)]' derivation='Sum' name='[sum:NOx Military Shipping (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NOx Motorcycles &amp; mopeds (Thousand tonnes)]' derivation='Sum' name='[sum:NOx Motorcycles &amp; mopeds (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NOx Other (Thousand tonnes)]' derivation='Sum' name='[sum:NOx Other (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NOx Rail (Thousand tonnes)]' derivation='Sum' name='[sum:NOx Rail (Thousand tonnes):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07vs13s0k4th221bc7j6n0pp0lc8].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Aviation LTO (Thousand tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Buses and coaches (Thousand tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Cars and taxis (Thousand tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Domestic shipping (Thousand tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx HGVs (Thousand tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx LGVs (vans) (Thousand tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Military Aircraft (Thousand tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Military Shipping (Thousand tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Motorcycles &amp; mopeds (Thousand tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Other (Thousand tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Rail (Thousand tonnes):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.07vs13s0k4th221bc7j6n0pp0lc8].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Aviation LTO (Thousand tonnes):qk]&quot;</bucket>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Buses and coaches (Thousand tonnes):qk]&quot;</bucket>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Cars and taxis (Thousand tonnes):qk]&quot;</bucket>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Domestic shipping (Thousand tonnes):qk]&quot;</bucket>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx HGVs (Thousand tonnes):qk]&quot;</bucket>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx LGVs (vans) (Thousand tonnes):qk]&quot;</bucket>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Military Aircraft (Thousand tonnes):qk]&quot;</bucket>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Military Shipping (Thousand tonnes):qk]&quot;</bucket>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Motorcycles &amp; mopeds (Thousand tonnes):qk]&quot;</bucket>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Other (Thousand tonnes):qk]&quot;</bucket>
+              <bucket>&quot;[federated.07vs13s0k4th221bc7j6n0pp0lc8].[sum:NOx Rail (Thousand tonnes):qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.07vs13s0k4th221bc7j6n0pp0lc8].[none:Year:nk]'>
+            <groupfilter function='member' level='[none:Year:nk]' member='&quot;2019&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.07vs13s0k4th221bc7j6n0pp0lc8].[:Measure Names]</column>
+            <column>[federated.07vs13s0k4th221bc7j6n0pp0lc8].[none:Year:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.07vs13s0k4th221bc7j6n0pp0lc8].[Multiple Values]' scope='rows' value='Emissions (thousand tonnes)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.07vs13s0k4th221bc7j6n0pp0lc8].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#a0cbe8' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07vs13s0k4th221bc7j6n0pp0lc8].[Multiple Values]</rows>
+        <cols>[federated.07vs13s0k4th221bc7j6n0pp0lc8].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{9E702939-D530-446F-8AE1-8DC74507FF87}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card mode='slider' param='[federated.07vs13s0k4th221bc7j6n0pp0lc8].[none:Year:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{5E678372-46FE-4F00-92D9-70CE026A444E}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card mode='slider' param='[federated.07vs13s0k4th221bc7j6n0pp0lc8].[none:Year:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{7C39F29B-CBA7-40BD-80A9-F90F1423D82B}' />
+    </window>
+  </windows>
+</workbook>
