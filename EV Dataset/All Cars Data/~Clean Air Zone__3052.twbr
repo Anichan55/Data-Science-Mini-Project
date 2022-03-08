@@ -235,13 +235,7 @@
           </datasources>
           <datasource-dependencies datasource='federated.1xqnoq81t50pth150v2m1154huxy'>
             <column caption='Number of Non- Compliant Cars' datatype='integer' name='[Est &lt; Eu4]' role='measure' type='quantitative' />
-            <column datatype='string' name='[Postcode District]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal'>
-              <semantic-values semantic-role='[ZipCode].[Name]'>
-                <semantic-value key='&quot;BS12&quot;' value='&quot;BS34&quot;' />
-              </semantic-values>
-            </column>
             <column caption='Total Cars' datatype='integer' name='[Q3]' role='measure' type='quantitative' />
-            <column-instance column='[Postcode District]' derivation='None' name='[none:Postcode District:nk]' pivot='key' type='nominal' />
             <column-instance column='[Est &lt; Eu4]' derivation='Sum' name='[sum:Est &lt; Eu4:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Q3]' derivation='Sum' name='[sum:Q3:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
@@ -269,7 +263,7 @@
           </pane>
         </panes>
         <rows>[federated.1xqnoq81t50pth150v2m1154huxy].[Multiple Values]</rows>
-        <cols>([federated.1xqnoq81t50pth150v2m1154huxy].[none:Postcode District:nk] / [federated.1xqnoq81t50pth150v2m1154huxy].[:Measure Names])</cols>
+        <cols>[federated.1xqnoq81t50pth150v2m1154huxy].[:Measure Names]</cols>
       </table>
       <simple-id uuid='{A4AB5381-E7B6-4559-8244-5DAB9E73735B}' />
     </worksheet>
