@@ -135,7 +135,7 @@
     </datasource>
   </datasources>
   <worksheets>
-    <worksheet name='Sheet 1'>
+    <worksheet name='All Cars vs ULEV trend'>
       <table>
         <view>
           <datasources>
@@ -202,7 +202,7 @@
     </worksheet>
   </worksheets>
   <windows saved-dpi-scale-factor='1.25' source-height='37'>
-    <window class='worksheet' maximized='true' name='Sheet 1'>
+    <window class='worksheet' maximized='true' name='All Cars vs ULEV trend'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -240,7 +240,7 @@
     </window>
   </windows>
   <thumbnails>
-    <thumbnail height='192' name='Sheet 1' width='192'>
+    <thumbnail height='192' name='All Cars vs ULEV trend' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
       AAAfMElEQVR4nO3daY9c2XnY8f9d6ta+V+/7ymVmSA5nlWeRlEi2EUAKbCSyHcdILCvOmwBJ
       kLzL50igxFICGJA9QQJIjiIHShzbE+0zIw6HM2Szm72w1+ru6tr3u528KLKHoyGH7GJXd5F1
