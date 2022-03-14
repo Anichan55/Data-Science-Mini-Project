@@ -269,7 +269,7 @@
     </worksheet>
   </worksheets>
   <windows saved-dpi-scale-factor='1.25' source-height='37'>
-    <window class='worksheet' maximized='true' name='CAZ'>
+    <window class='worksheet' name='CAZ'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -297,7 +297,7 @@
       </cards>
       <simple-id uuid='{AC93F6C7-7EFD-46A5-8987-8ABE113B9A5A}' />
     </window>
-    <window class='worksheet' name='Total Cars vs Non-Complaint Cars'>
+    <window class='worksheet' maximized='true' name='Total Cars vs Non-Complaint Cars'>
       <cards>
         <edge name='left'>
           <strip size='160'>
