@@ -1,0 +1,396 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0108.1039                               -->
+<workbook original-version='18.1' source-build='2021.4.3 (20214.22.0108.1039)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Sheet2 (All cars vs ULEV)' inline='true' name='federated.0wlgtwv1n4wagj103vrb71ffw4xv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='All cars vs ULEV' name='excel-direct.0lem8dv18af62013lhaor1yyxxz7'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/anich/OneDrive/Desktop/All cars vs ULEV.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='All cars vs ULEV cars' name='textscan.05pbg7e179o0cy10s7kz31jywefe'>
+            <connection class='textscan' directory='C:/Users/anich/OneDrive/Documents/GitHub/Data-Science-Mini-Project/EV Dataset/All Cars Data' filename='All cars vs ULEV cars.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.05pbg7e179o0cy10s7kz31jywefe' name='All cars vs ULEV cars.csv' table='[All cars vs ULEV cars#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='integer' name='All Cars' ordinal='1' />
+            <column datatype='integer' name='ULEV' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.05pbg7e179o0cy10s7kz31jywefe' name='All cars vs ULEV cars.csv' table='[All cars vs ULEV cars#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='integer' name='All Cars' ordinal='1' />
+            <column datatype='integer' name='ULEV' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[All cars vs ULEV cars.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rs&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[All cars vs ULEV cars.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All cars vs ULEV cars.csv_C1BD464634604646BFD8C51AA906E7C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>All Cars</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[All Cars]</local-name>
+            <parent-name>[All cars vs ULEV cars.csv]</parent-name>
+            <remote-alias>All Cars</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All cars vs ULEV cars.csv_C1BD464634604646BFD8C51AA906E7C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ULEV</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ULEV]</local-name>
+            <parent-name>[All cars vs ULEV cars.csv]</parent-name>
+            <remote-alias>ULEV</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All cars vs ULEV cars.csv_C1BD464634604646BFD8C51AA906E7C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[All Cars]' role='measure' type='quantitative' />
+      <column caption='Calculation1' datatype='integer' name='[Calculation_1383449542135996416]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([All Cars])-([ULEV])' />
+      </column>
+      <column caption='Year' datatype='datetime' name='[Type]' role='dimension' type='ordinal' />
+      <column caption='Ulev' datatype='integer' name='[ULEV]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='All cars vs ULEV cars.csv' datatype='table' name='[__tableau_internal_object_id__].[All cars vs ULEV cars.csv_C1BD464634604646BFD8C51AA906E7C3]' role='measure' type='quantitative' />
+      <column-instance column='[All Cars]' derivation='Avg' name='[avg:All Cars:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1383449542135996416]' derivation='Avg' name='[avg:Calculation_1383449542135996416:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ULEV]' derivation='Avg' name='[avg:ULEV:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[All Cars]' derivation='Sum' name='[sum:All Cars:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1383449542135996416]' derivation='Sum' name='[sum:Calculation_1383449542135996416:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ULEV]' derivation='Sum' name='[sum:ULEV:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1383449542135996416]' derivation='User' name='[usr:Calculation_1383449542135996416:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0wlgtwv1n4wagj103vrb71ffw4xv].[avg:All Cars:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0wlgtwv1n4wagj103vrb71ffw4xv].[sum:All Cars:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0wlgtwv1n4wagj103vrb71ffw4xv].[usr:Calculation_1383449542135996416:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0wlgtwv1n4wagj103vrb71ffw4xv].[avg:Calculation_1383449542135996416:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0wlgtwv1n4wagj103vrb71ffw4xv].[sum:Calculation_1383449542135996416:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0wlgtwv1n4wagj103vrb71ffw4xv]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0wlgtwv1n4wagj103vrb71ffw4xv].[avg:ULEV:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0wlgtwv1n4wagj103vrb71ffw4xv].[sum:ULEV:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='All cars vs ULEV cars.csv' id='All cars vs ULEV cars.csv_C1BD464634604646BFD8C51AA906E7C3'>
+            <properties context=''>
+              <relation connection='textscan.05pbg7e179o0cy10s7kz31jywefe' name='All cars vs ULEV cars.csv' table='[All cars vs ULEV cars#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='integer' name='All Cars' ordinal='1' />
+                  <column datatype='integer' name='ULEV' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='All Cars vs ULEV trend'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet2 (All cars vs ULEV)' name='federated.0wlgtwv1n4wagj103vrb71ffw4xv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0wlgtwv1n4wagj103vrb71ffw4xv'>
+            <column datatype='integer' name='[All Cars]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Ulev' datatype='integer' name='[ULEV]' role='measure' type='quantitative' />
+            <column-instance column='[All Cars]' derivation='Sum' name='[sum:All Cars:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ULEV]' derivation='Sum' name='[sum:ULEV:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0wlgtwv1n4wagj103vrb71ffw4xv].[yr:Date:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:Date:ok]' member='2018' />
+              <groupfilter function='member' level='[yr:Date:ok]' member='2019' />
+              <groupfilter function='member' level='[yr:Date:ok]' member='2020' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0wlgtwv1n4wagj103vrb71ffw4xv].[yr:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0wlgtwv1n4wagj103vrb71ffw4xv].[sum:All Cars:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0wlgtwv1n4wagj103vrb71ffw4xv].[sum:ULEV:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0wlgtwv1n4wagj103vrb71ffw4xv].[sum:ULEV:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>([federated.0wlgtwv1n4wagj103vrb71ffw4xv].[sum:All Cars:qk] + [federated.0wlgtwv1n4wagj103vrb71ffw4xv].[sum:ULEV:qk])</rows>
+        <cols>[federated.0wlgtwv1n4wagj103vrb71ffw4xv].[tmn:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{C203E21F-4D91-4CA4-A8B5-7BE2852CF669}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='All Cars vs ULEV trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0wlgtwv1n4wagj103vrb71ffw4xv].[sum:ULEV:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0wlgtwv1n4wagj103vrb71ffw4xv].[:Measure Names]</field>
+            <field>[federated.0wlgtwv1n4wagj103vrb71ffw4xv].[avg:ULEV:qk]</field>
+            <field>[federated.0wlgtwv1n4wagj103vrb71ffw4xv].[sum:ULEV:qk]</field>
+            <field>[federated.0wlgtwv1n4wagj103vrb71ffw4xv].[yr:Date:ok]</field>
+            <field>[federated.0wlgtwv1n4wagj103vrb71ffw4xv].[yr:Type:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D2A09F99-7D89-47AC-A0F8-702DB1156E9E}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='All Cars vs ULEV trend' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
